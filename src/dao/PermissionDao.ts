@@ -1,6 +1,7 @@
 import {Logger} from "../loaders/logger";
 import {IPermission} from "../interfaces/IPermission";
 import Permission from "../models/Permission";
+import Order from "../models/Order";
 
 export class PermissionDao{
 

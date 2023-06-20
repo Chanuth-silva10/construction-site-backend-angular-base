@@ -1,5 +1,6 @@
 import {IApproval} from "../interfaces/IApproval";
 import * as mongoose from 'mongoose';
+import {OrderStatus} from "../enums/orderStatus";
 
 const { Schema } = mongoose;
 
@@ -24,7 +25,11 @@ const ApprovalSchema = new Schema({
         ref: 'employee',
         required: true
     }],
-   
+    status: {
+        type: String,
+        enum: [OrderStatus.approved,OrderStatus.declined,OrderStatus.partiallyApproved,OrderStatus.pending,OrderStatus.placed,OrderStatus.referred,OrderStatus.returned,OrderStatus.waiting],
+        default: OrderStatus.pending
+    }
 
 }, { timestamps: true });
 
