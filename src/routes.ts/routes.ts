@@ -10,6 +10,7 @@ import SiteController from "../controllers/SiteController";
 import RulesController from "../controllers/IRulesController";
 import ApprovalController from "../controllers/ApprovalController";
 import OrderController from "../controllers/OrderController";
+import PaymentController from "../controllers/PaymentController";
 
 export default function setRoutes(app: any) {
   const router = express();
@@ -23,7 +24,8 @@ export default function setRoutes(app: any) {
   const rulesControl = new RulesController();
   const approvalControl = new ApprovalController();
   const orderControl = new OrderController();
-
+  const paymentControl = new PaymentController();
+  
   app.use("/api", router);
 
   //Routes
@@ -91,7 +93,6 @@ export default function setRoutes(app: any) {
   router.route("/rules/:id").put(rulesControl.updateRules);
   router.route("/rules/:id").delete(rulesControl.deleteRules);
 
-
   // Approval Routes
   router.route("/approval").post(approvalControl.addApproval);
   router.route("/approval").get(approvalControl.getAllApprovals);
@@ -100,12 +101,21 @@ export default function setRoutes(app: any) {
   router.route("/approval/:id").delete(approvalControl.removeApproval);
 
   // Order Routes
-  router.route('/orders').post(orderControl.addOrder);
-  router.route('/orders').get(orderControl.viewOrders);
-  router.route('/orders/status/:id').put(orderControl.updateOrderStatus);
-  router.route('/orders/comments/:id').post(orderControl.addComments);
-  router.route('/orders/:status/:empType').get(orderControl.getOrderByStatusAndEmpType);
-  router.route('/orders/:id').get(orderControl.getOrderById);
-  router.route('/orders/:id').put(orderControl.editOrder);
-  router.route('/orders/:id').delete(orderControl.deleteOrder);
+  router.route("/orders").post(orderControl.addOrder);
+  router.route("/orders").get(orderControl.viewOrders);
+  router.route("/orders/status/:id").put(orderControl.updateOrderStatus);
+  router.route("/orders/comments/:id").post(orderControl.addComments);
+  router
+    .route("/orders/:status/:empType")
+    .get(orderControl.getOrderByStatusAndEmpType);
+  router.route("/orders/:id").get(orderControl.getOrderById);
+  router.route("/orders/:id").put(orderControl.editOrder);
+  router.route("/orders/:id").delete(orderControl.deleteOrder);
+
+  // Payment Routes
+  router.route('/payments').post(paymentControl.addPayment);
+  router.route('/payments').get(paymentControl.viewPayments);
+  router.route('/payments/:id').get(paymentControl.getPaymentById);
+  router.route('/payments/:id').put(paymentControl.editPayment);
+  router.route('/payments/:id').delete(paymentControl.deletePayment);
 }
