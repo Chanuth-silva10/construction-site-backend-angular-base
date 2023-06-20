@@ -11,6 +11,7 @@ import RulesController from "../controllers/IRulesController";
 import ApprovalController from "../controllers/ApprovalController";
 import OrderController from "../controllers/OrderController";
 import PaymentController from "../controllers/PaymentController";
+import DeliveryController from "../controllers/DeliveryController";
 
 export default function setRoutes(app: any) {
   const router = express();
@@ -25,7 +26,8 @@ export default function setRoutes(app: any) {
   const approvalControl = new ApprovalController();
   const orderControl = new OrderController();
   const paymentControl = new PaymentController();
-  
+  const deliveryControl = new DeliveryController();
+
   app.use("/api", router);
 
   //Routes
@@ -113,9 +115,16 @@ export default function setRoutes(app: any) {
   router.route("/orders/:id").delete(orderControl.deleteOrder);
 
   // Payment Routes
-  router.route('/payments').post(paymentControl.addPayment);
-  router.route('/payments').get(paymentControl.viewPayments);
-  router.route('/payments/:id').get(paymentControl.getPaymentById);
-  router.route('/payments/:id').put(paymentControl.editPayment);
-  router.route('/payments/:id').delete(paymentControl.deletePayment);
+  router.route("/payments").post(paymentControl.addPayment);
+  router.route("/payments").get(paymentControl.viewPayments);
+  router.route("/payments/:id").get(paymentControl.getPaymentById);
+  router.route("/payments/:id").put(paymentControl.editPayment);
+  router.route("/payments/:id").delete(paymentControl.deletePayment);
+
+  // Delivery Routes
+  router.route('/deliveries').post(deliveryControl.addDelivery);
+  router.route('/deliveries').get(deliveryControl.viewDeliveries);
+  router.route('/deliveries/:id').get(deliveryControl.getDeliveryById);
+  router.route('/deliveries/:id').put(deliveryControl.editDelivery);
+  router.route('/deliveries/:id').delete(deliveryControl.deleteDelivery);
 }
