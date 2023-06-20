@@ -6,6 +6,7 @@ import CategoryController from "../controllers/CategoryController";
 import ItemController from "../controllers/ItemController";
 import SupplierController from "../controllers/SupplierController";
 import PermissionController from "../controllers/PermissionController";
+import SiteController from "../controllers/SiteController";
 
 export default function setRoutes(app:any){
 
@@ -16,6 +17,7 @@ export default function setRoutes(app:any){
     const itemControl = new ItemController();
     const supplierControl = new SupplierController();
     const permissionControl = new PermissionController();
+    const siteControl = new SiteController();
 
     app.use("/api",router);
 
@@ -63,5 +65,12 @@ export default function setRoutes(app:any){
      router.route("/permission/:id").get(permissionControl.getPermissionById);
      router.route("/permission/:id").put(permissionControl.updatePermission);
      router.route("/permission/:id").delete(permissionControl.deletePermission);
+
+      //Site Routes
+    router.route("/site").post(siteControl.createSite);
+    router.route("/site").get(siteControl.getAllSite);
+    router.route("/site/:id").get(siteControl.getSiteById);
+    router.route("/site/:id").put(siteControl.updateSite);
+    router.route("/site/:id").delete(siteControl.deleteSite);
 
 }
