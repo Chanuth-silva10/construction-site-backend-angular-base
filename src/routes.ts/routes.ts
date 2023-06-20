@@ -3,6 +3,7 @@ import LoginController from "../controllers/LoginController";
 import { multerMiddleWare } from "../middleware/multer";
 import EmployeeController from "../controllers/EmployeeController";
 import CategoryController from "../controllers/CategoryController";
+import ItemController from "../controllers/ItemController";
 
 export default function setRoutes(app:any){
 
@@ -10,6 +11,7 @@ export default function setRoutes(app:any){
     const loginControl = new LoginController();
     const employeeControl = new EmployeeController();
     const categoryControl = new CategoryController();
+    const itemControl = new ItemController();
 
     app.use("/api",router);
 
@@ -35,5 +37,13 @@ export default function setRoutes(app:any){
     router.route("/category/:id").get(categoryControl.getCategoryById);
     router.route("/category/:id").put(categoryControl.updateCategory);
     router.route("/category/:id").delete(categoryControl.deleteCategory);
+
+     // Item Routes
+     router.route('/items').post(itemControl.addItem);
+     router.route('/items').get(itemControl.getAllItems);
+     router.route('/items/supplier/:id').get(itemControl.getItemsBySupplierId);
+     router.route('/items/:id').get(itemControl.getItemById);
+     router.route('/items/:id').put(itemControl.editItem);
+     router.route('/items/:id').delete(itemControl.removeItem);
 
 }
