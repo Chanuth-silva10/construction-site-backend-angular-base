@@ -5,6 +5,7 @@ import EmployeeController from "../controllers/EmployeeController";
 import CategoryController from "../controllers/CategoryController";
 import ItemController from "../controllers/ItemController";
 import SupplierController from "../controllers/SupplierController";
+import PermissionController from "../controllers/PermissionController";
 
 export default function setRoutes(app:any){
 
@@ -14,6 +15,7 @@ export default function setRoutes(app:any){
     const categoryControl = new CategoryController();
     const itemControl = new ItemController();
     const supplierControl = new SupplierController();
+    const permissionControl = new PermissionController();
 
     app.use("/api",router);
 
@@ -54,5 +56,12 @@ export default function setRoutes(app:any){
     router.route("/supplier/:id").get(supplierControl.getSupplierById);
     router.route("/supplier/:id").put(supplierControl.updateSupplier);
     router.route("/supplier/:id").delete(supplierControl.deleteSupplier);
+
+     // Permission Routes
+     router.route("/permission").post(permissionControl.createPermission);
+     router.route("/permission").get(permissionControl.getAllPermission);
+     router.route("/permission/:id").get(permissionControl.getPermissionById);
+     router.route("/permission/:id").put(permissionControl.updatePermission);
+     router.route("/permission/:id").delete(permissionControl.deletePermission);
 
 }
