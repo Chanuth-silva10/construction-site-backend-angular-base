@@ -1,0 +1,18 @@
+{"level":"info","message":"MongoDB Initialized","timestamp":"20-06-2023 17:55:22"}
+{"level":"info","message":"Express Initialized","timestamp":"20-06-2023 17:55:22"}
+{"level":"error","message":"Error: listen EADDRINUSE: address already in use :::3001","timestamp":"20-06-2023 17:55:22"}
+{"level":"info","message":"MongoDB Initialized","timestamp":"20-06-2023 17:57:57"}
+{"level":"info","message":"Express Initialized","timestamp":"20-06-2023 17:57:57"}
+{"level":"info","message":"Server is running on port 3001","timestamp":"20-06-2023 17:57:57"}
+{"level":"info","message":"MongoDB Initialized","timestamp":"20-06-2023 18:01:54"}
+{"level":"info","message":"Express Initialized","timestamp":"20-06-2023 18:01:54"}
+{"level":"info","message":"Server is running on port 3001","timestamp":"20-06-2023 18:01:54"}
+{"level":"info","message":"MongoDB Initialized","timestamp":"20-06-2023 18:04:44"}
+{"level":"info","message":"Express Initialized","timestamp":"20-06-2023 18:04:44"}
+{"level":"info","message":"Server is running on port 3001","timestamp":"20-06-2023 18:04:44"}
+{"level":"info","message":"MongoDB Initialized","timestamp":"20-06-2023 18:05:20"}
+{"level":"info","message":"Express Initialized","timestamp":"20-06-2023 18:05:20"}
+{"level":"info","message":"Server is running on port 3001","timestamp":"20-06-2023 18:05:20"}
+{"level":"info","message":"MongoDB Initialized","timestamp":"20-06-2023 18:06:40"}
+{"level":"info","message":"Express Initialized","timestamp":"20-06-2023 18:06:40"}
+{"level":"info","message":"Server is running on port 3001","timestamp":"20-06-2023 18:06:40"}
