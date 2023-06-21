@@ -1,4 +1,4 @@
-import * as express from "express";
+const express = require('express')
 import config from "./config/config";
 import {Logger} from "./loaders/logger"
 

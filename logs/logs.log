@@ -16,3 +16,37 @@
 {"level":"info","message":"MongoDB Initialized","timestamp":"20-06-2023 18:06:40"}
 {"level":"info","message":"Express Initialized","timestamp":"20-06-2023 18:06:40"}
 {"level":"info","message":"Server is running on port 3001","timestamp":"20-06-2023 18:06:40"}
+{"level":"info","message":"MongoDB Initialized","timestamp":"20-06-2023 23:32:45"}
+{"level":"info","message":"Express Initialized","timestamp":"20-06-2023 23:32:46"}
+{"level":"info","message":"Server is running on port 3001","timestamp":"20-06-2023 23:32:46"}
+{"level":"info","message":"MongoDB Initialized","timestamp":"21-06-2023 10:06:07"}
+{"level":"info","message":"Express Initialized","timestamp":"21-06-2023 10:06:07"}
+{"level":"info","message":"Server is running on port 3001","timestamp":"21-06-2023 10:06:07"}
+{"level":"info","message":"LoginController - authenticate()","timestamp":"21-06-2023 10:27:51"}
+{"level":"info","message":"LoginService - getLogin()","timestamp":"21-06-2023 10:27:51"}
+{"level":"info","message":"LoginDao - getByEmail()","timestamp":"21-06-2023 10:27:51"}
+{"level":"info","message":"admin1@gmail.com Login Retrieved Successfully","timestamp":"21-06-2023 10:27:51"}
+{"level":"info","message":"LoginController - authenticate()","timestamp":"21-06-2023 10:28:10"}
+{"level":"info","message":"LoginService - getLogin()","timestamp":"21-06-2023 10:28:10"}
+{"level":"info","message":"LoginDao - getByEmail()","timestamp":"21-06-2023 10:28:10"}
+{"level":"info","message":"admin1@gmail.com Login Retrieved Successfully","timestamp":"21-06-2023 10:28:10"}
+{"level":"info","message":"EmployeeService - getEmployeeById()","timestamp":"21-06-2023 10:28:10"}
+{"level":"info","message":"EmployeeDao - getById()","timestamp":"21-06-2023 10:28:10"}
+{"level":"info","message":"649187571b4e9b3aec898579 Employee Retrieved Successfully","timestamp":"21-06-2023 10:28:10"}
+{"level":"info","message":"EmployeeController - getEmployeeById()","timestamp":"21-06-2023 10:28:10"}
+{"level":"info","message":"EmployeeService - getEmployeeById()","timestamp":"21-06-2023 10:28:10"}
+{"level":"info","message":"EmployeeDao - getById()","timestamp":"21-06-2023 10:28:10"}
+{"level":"info","message":"ItemController - getAllItems()","timestamp":"21-06-2023 10:28:10"}
+{"level":"info","message":"Item Services - getAllItems()","timestamp":"21-06-2023 10:28:10"}
+{"level":"info","message":"ItemDao - getAll()","timestamp":"21-06-2023 10:28:10"}
+{"level":"info","message":"649187571b4e9b3aec898579 Employee Retrieved Successfully","timestamp":"21-06-2023 10:28:10"}
+{"level":"info","message":"Items Retrieved Successfully","timestamp":"21-06-2023 10:28:11"}
+{"level":"info","message":"MongoDB Initialized","timestamp":"21-06-2023 10:47:34"}
+{"level":"info","message":"Express Initialized","timestamp":"21-06-2023 10:47:34"}
+{"level":"info","message":"Server is running on port 3001","timestamp":"21-06-2023 10:47:34"}
+{"level":"info","message":"MongoDB Initialized","timestamp":"21-06-2023 10:54:11"}
+{"level":"info","message":"Express Initialized","timestamp":"21-06-2023 10:54:11"}
+{"level":"info","message":"Server is running on port 3001","timestamp":"21-06-2023 10:54:11"}
+{"level":"info","message":"MongoDB Initialized","timestamp":"21-06-2023 11:49:54"}
+{"level":"info","message":"Express Initialized","timestamp":"21-06-2023 11:49:54"}
+{"level":"info","message":"Server is running on port 3001","timestamp":"21-06-2023 11:49:54"}
