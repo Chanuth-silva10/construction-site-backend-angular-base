@@ -3,11 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "type": "commonjs",
   "scripts": {
     "start": "node ./dist/server.js",
     "start:watch": "nodemon",
-    "build": "npm run build-ts",
+    "build": "npm run build-ts && node ./dist/server.js",
     "build-ts": "tsc"
   },
   "dependencies": {

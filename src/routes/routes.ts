@@ -1,4 +1,4 @@
-import * as express from "express";
+const express = require('express')
 import LoginController from "../controllers/LoginController";
 import { multerMiddleWare } from "../middleware/multer";
 import EmployeeController from "../controllers/EmployeeController";
