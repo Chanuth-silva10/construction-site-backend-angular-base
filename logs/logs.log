@@ -53,3 +53,6 @@
 {"level":"info","message":"MongoDB Initialized","timestamp":"21-06-2023 11:52:11"}
 {"level":"info","message":"Express Initialized","timestamp":"21-06-2023 11:52:11"}
 {"level":"info","message":"Server is running on port 3001","timestamp":"21-06-2023 11:52:11"}
+{"level":"info","message":"MongoDB Initialized","timestamp":"21-06-2023 12:02:09"}
+{"level":"info","message":"Express Initialized","timestamp":"21-06-2023 12:02:09"}
+{"level":"info","message":"Server is running on port 3001","timestamp":"21-06-2023 12:02:09"}
