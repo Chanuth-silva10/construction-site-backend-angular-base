@@ -65,3 +65,15 @@
 {"level":"info","message":"MongoDB Initialized","timestamp":"21-06-2023 12:39:15"}
 {"level":"info","message":"Express Initialized","timestamp":"21-06-2023 12:39:15"}
 {"level":"info","message":"Server is running on port 3001","timestamp":"21-06-2023 12:39:15"}
+{"level":"info","message":"MongoDB Initialized","timestamp":"05-09-2023 23:58:47"}
+{"level":"info","message":"Express Initialized","timestamp":"05-09-2023 23:58:47"}
+{"level":"info","message":"Server is running on port 3001","timestamp":"05-09-2023 23:58:47"}
+{"level":"info","message":"MongoDB Initialized","timestamp":"05-09-2023 23:59:27"}
+{"level":"info","message":"Express Initialized","timestamp":"05-09-2023 23:59:27"}
+{"level":"info","message":"Server is running on port 3001","timestamp":"05-09-2023 23:59:27"}
+{"level":"info","message":"MongoDB Initialized","timestamp":"06-09-2023 00:00:03"}
+{"level":"info","message":"Express Initialized","timestamp":"06-09-2023 00:00:03"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"06-09-2023 00:00:03"}
+{"level":"info","message":"MongoDB Initialized","timestamp":"06-09-2023 01:40:55"}
+{"level":"info","message":"Express Initialized","timestamp":"06-09-2023 01:40:56"}
+{"level":"info","message":"Server is running on port 3000","timestamp":"06-09-2023 01:40:56"}
